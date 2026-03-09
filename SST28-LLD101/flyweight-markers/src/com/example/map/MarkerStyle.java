@@ -10,9 +10,9 @@ package com.example.map;
  */
 public class MarkerStyle {
 
-    private String shape;   // e.g., PIN, CIRCLE, SQUARE
-    private String color;   // e.g., RED, BLUE, GREEN
-    private int size;       // e.g., 10..20
+    private String shape; // e.g., PIN, CIRCLE, SQUARE
+    private String color; // e.g., RED, BLUE, GREEN
+    private int size; // e.g., 10..20
     private boolean filled; // filled vs outline
 
     public MarkerStyle(String shape, String color, int size, boolean filled) {
@@ -22,16 +22,38 @@ public class MarkerStyle {
         this.filled = filled;
     }
 
-    public String getShape() { return shape; }
-    public String getColor() { return color; }
-    public int getSize() { return size; }
-    public boolean isFilled() { return filled; }
+    public String getShape() {
+        return shape;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public boolean isFilled() {
+        return filled;
+    }
 
     // BROKEN: setters should go away after immutability refactor
-    public void setShape(String shape) { this.shape = shape; }
-    public void setColor(String color) { this.color = color; }
-    public void setSize(int size) { this.size = size; }
-    public void setFilled(boolean filled) { this.filled = filled; }
+    public void setShape(String shape) {
+        this.shape = shape;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public void setFilled(boolean filled) {
+        this.filled = filled;
+    }
 
     @Override
     public String toString() {

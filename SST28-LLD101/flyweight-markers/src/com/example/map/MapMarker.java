@@ -6,7 +6,8 @@ package com.example.map;
  * This means identical styles are duplicated across thousands of markers.
  *
  * TODO (student):
- * - Store intrinsic state as a shared MarkerStyle obtained from MarkerStyleFactory.
+ * - Store intrinsic state as a shared MarkerStyle obtained from
+ * MarkerStyleFactory.
  * - Keep only extrinsic state here: lat, lng, label.
  */
 public class MapMarker {
@@ -19,7 +20,7 @@ public class MapMarker {
     private final MarkerStyle style;
 
     public MapMarker(double lat, double lng, String label,
-                     String shape, String color, int size, boolean filled) {
+            String shape, String color, int size, boolean filled) {
         this.lat = lat;
         this.lng = lng;
         this.label = label;
@@ -28,8 +29,19 @@ public class MapMarker {
         this.style = new MarkerStyle(shape, color, size, filled);
     }
 
-    public double getLat() { return lat; }
-    public double getLng() { return lng; }
-    public String getLabel() { return label; }
-    public MarkerStyle getStyle() { return style; }
+    public double getLat() {
+        return lat;
+    }
+
+    public double getLng() {
+        return lng;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public MarkerStyle getStyle() {
+        return style;
+    }
 }
